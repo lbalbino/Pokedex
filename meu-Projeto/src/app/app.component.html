@@ -1,0 +1,27 @@
+<div *ngFor="let pokemon of pokemonList" (click)="mostrarDetalhes(pokemon)" class="descricao-pokemon">
+  <h1>{{pokemon.nome}}</h1>
+  <img src={{pokemon.photo}}>
+  <div data-ls-module="progressBar" role="progressbar" aria-valuenow="100" class="ls-left-percentage"></div>
+</div>
+<div *ngIf="selectPokemon" class="modal">
+  <h1>{{selectPokemon.nome}}</h1>
+  <h2>{{selectPokemon.description}}</h2>
+  <span>Força:</span>
+  <mat-progress-bar mode="determinate" style="color: brown;" value="40"></mat-progress-bar>
+  <span>Defesa:</span>
+  <mat-progress-bar mode="determinate" style="color: blue;" value="30"></mat-progress-bar>
+  <span>Ataque:</span>
+  <mat-progress-bar mode="determinate" style="color: yellow;" value="25"></mat-progress-bar>
+  <span>Poder de Ataque Fisico:</span>
+  <mat-progress-bar mode="determinate" style="color: orange;" value="60"></mat-progress-bar>
+  <span>Resistência a ataques físicos:</span>
+  <mat-progress-bar mode="determinate" style="color: green;" value="55"></mat-progress-bar>
+  <span>Poder de ataques mágicos ou especiais:</span>
+  <mat-progress-bar mode="determinate" style="color: purple;" value="80"></mat-progress-bar>
+  <span>Resistência a ataques mágicos ou especiais:</span>
+  <mat-progress-bar mode="determinate" style="color: black;" value="95"></mat-progress-bar>
+  <span>Rapidez em batalha:</span>
+  <mat-progress-bar mode="determinate" style="color: violet;" value="30"></mat-progress-bar>
+  <br>
+  <button (click)="fecharModal()">Fechar</button>
+</div>

@@ -1,0 +1,55 @@
+.descricao-pokemon {
+    display: flex;    
+    border: 1px solid black;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    align-items: center;
+}
+h1 {
+    font-family: 'Segoe UI';
+}
+h1:active{
+    color: coral;
+}
+
+.paragrafo {
+    font-family: 'Segoe UI';
+    font-size: 18px;
+}
+
+img {
+    width: 200px;
+}
+
+.modal {
+    top: 1%;
+    left: 55%;
+    padding: 4%;
+    position: fixed;
+    font-size: 18px;    
+    font-family: 'Segoe UI';
+    border: 1px solid black;
+    background-color: whitesmoke
+}
+span {
+    font-size: 18px;
+}
+
+button {
+    border: none;
+    padding: 15px;
+    color: black;   
+    border-radius: 15px;
+    font-family: 'Segoe UI';
+    background-color: rgb(13, 120, 83);
+}
+h1:hover {
+    color: blue;
+}
+
+button:active {
+    color: aliceblue;
+    border-radius: 15px;
+    background-color: brown;
+}
